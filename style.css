@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+}
+
+:root {
+    --BrandPrimary800: #334000;
+    --BrandPrimary700: #668000;
+    --BrandPrimary600: #95B807;
+    --BrandPrimary500: #BEEA0E;
+    --BrandPrimary400: #E3F59D;
+    --BrandPrimary300: #E7F5B0;
+    --BrandPrimary200: #F0FAC8;
+    --BrandPrimary100: #F9FFE0;
+}
+/* Brand Background */
+.BrandBGLight {
+    background-color: var(--BrandPrimary100);
+}
+
+.BrandBGLight {
+    background-color: var(--BrandPrimary600);
+}
+
+.BrandBGDark {
+    background-color: var(--BrandPrimary800);
+}
+
+/* Brand Color */
+.BrandColorLight {
+    color: var(--BrandPrimary100);
+}
+
+.BrandColorLight {
+    color: var(--BrandPrimary600);
+}
+
+.BrandColorDark {
+    color: var(--BrandPrimary800);
+}
+
