@@ -38,3 +38,69 @@
     color: var(--BrandPrimary800);
 }
 
+/* Buttons */
+
+.btn-brandPrimary {
+  background-color: var(--BrandPrimary600);
+  color: var(--BrandPrimary100);
+  border: none;
+}
+
+.btn-brandPrimary:hover {
+  background-color: var(--BrandPrimary700);
+  color: var(--BrandPrimary100);
+}
+
+.btn-brandSecondary {
+  background-color: var(--BrandPrimary100);
+  color: var(--BrandPrimary700);
+  border: 1px solid var(--BrandPrimary600);
+}
+
+.btn-brandSecondary:hover {
+  background-color: var(--BrandPrimary200);
+  border: 1px solid var(--BrandPrimary600);
+  color: var(--BrandPrimary700);
+}
+
+/* Gradients */
+.gradientText {
+  background: linear-gradient(
+    to right,
+    var(--BrandPrimary500),
+    var(--BrandPrimary700)
+  );
+
+  /* Found the following in google ahve yet to understand */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradientText:hover {
+  filter: brightness(0.80);
+}
+
+.blueGradient {
+  background: linear-gradient(to right, #18A5EC, #0067A2);
+  color: #ffffff;
+  border: none;
+}
+
+.blueGradient:hover {
+  filter: brightness(0.80);
+}
+
+.garyGradient {
+  background: linear-gradient(to right, #BEBED4, #3A3C4D);
+  color: #ffffff;
+  border: none;
+}
+
+.garyGradient:hover {
+  filter: brightness(0.80);
+}
+
+.card-imgMaxWidth {
+  max-width: 400px;
+}

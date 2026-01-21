@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- My CSS Branding -->
+    <link rel="stylesheet" href="/style.css">
+
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -118,9 +121,22 @@
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-linkedin"></i>
             </div>
+
+            <!-- as a within Button is not getting handled right by me -->
+            <!-- <div class="d-flex gap-2">
+                <button class="btn btn-outline-light">
+                    <a class="text-decoration-none" href="#">Login</a>
+                </button>
+
+                <button class="btn btn-primary">
+                    <a class="text-decoration-none" href="#">Book a Demo</a>
+                </button>
+            </div> -->
+
             <div class="d-flex gap-2">
-                <button><a href="">Login</a></button>
-                <button><a href="">Register</a></button>
+                <a class="btn btn-outline-light btn-sm" href="#">Login</a>
+
+                <a class="btn btn-primary btn-sm" href="#">Book a Demo</a>
             </div>
         </div>
 
@@ -170,9 +186,95 @@
         </nav>
     </nav>
 
+    <!-- Hero section -->
+    <Header class="border-bottom px-4 pt-4 text-center">
+        <h1 class="display-4 fw-bold col-lg-6 mx-auto">Build powerful SEO agents. <br>
+            Activate them from everywhere.</h1>
+        <p class="lead mb-4">
+            Bring deep agentic capabilities to your entire marketing stack.
+        </p>
 
+        <div class="d-flex gap-3 justify-content-center mb-4">
+            <a class="btn btn-brandPrimary btn-lg" href="#">Book a Demo</a>
+            <a class="btn btn-light btn-lg" href="#">Customize Solution</a>
+        </div>
 
+        <div class="rounded-4 overflow-hidden mx-auto" style="max-height: 40vh;">
+            <img class="img-fluid" src="./Assets/Preview for SEO.svg" alt="">
+        </div>
 
+        <!-- <img class="overflow-hidden rounded-4" style="max-height: 40vh;" src="./Assets/Preview for SEO.svg" alt=""> -->
+    </Header>
+
+    <!-- Logos -->
+    <div class="d-flex gap-2 justify-content-between overflow-hidden">
+        <img src="./Assets/CompanyLogos/vecteezy_abstract-illustration-logo-vector_16716265.svg" width="200px" alt="">
+        <img src="./Assets/CompanyLogos/vecteezy_horse-vector-logo-illustration_16716281.svg" width="200px" alt="">
+        <img src="./Assets/CompanyLogos/vecteezy_house-vector-logo-illustration_16716208.svg" width="200px" alt="">
+        <img src="./Assets/CompanyLogos/vecteezy_spear-logo-illustration-vector_16716200.svg" width="200px" alt="">
+        <img src="./Assets/CompanyLogos/vecteezy_abstract-illustration-logo-vector_16716265.svg" width="200px" alt="">
+        <img src="./Assets/CompanyLogos/vecteezy_horse-vector-logo-illustration_16716281.svg" width="200px" alt="">
+        <img src="./Assets/CompanyLogos/vecteezy_house-vector-logo-illustration_16716208.svg" width="200px" alt="">
+        <img src="./Assets/CompanyLogos/vecteezy_spear-logo-illustration-vector_16716200.svg" width="200px" alt="">
+    </div>
+
+    <!-- Features -->
+    <!-- I was unable to use d-flex and gap here as it messed up so individual mbottom margins were added-->
+    <section class="p-4">
+        <span class="badge BrandBGLight mb-2">FEATURES</span>
+
+        <h2 class="mb-4">
+            <span class="gradientText ">AI agents</span>
+            built to
+            <span class="gradientText">automate your SEO workflows</span>
+        </h2>
+
+        <!-- Cards -->
+        <div class="row g-3">
+            <!-- Card 01 -->
+            <div class=" col-12 col-md-6">
+                <div class="card blueGradient">
+                    <div class="card-header">YOUR AI COMPANION</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Customer Engagement</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card’s content.</p>
+                    </div>
+                    <div class="overflow-hidden d-flex justify-content-center">
+                        <img class="img-fluid mx-auto card-imgMaxWidth" src="/Assets/Card 01.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 02 -->
+            <div class=" col-12 col-md-6">
+                <div class="card garyGradient">
+                    <div class="card-header">YOUR AI COMPANION</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Marketing Operations</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card’s content.</p>
+                    </div>
+                    <div class="overflow-hidden d-flex justify-content-center">
+                        <img class="img-fluid card-imgMaxWidth" src="/Assets/Card 02.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="d-flex justify-content-between align-items-center p-3 border-top ">
+        <ul class="nav justify-content-center p-2 text-black">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        </ul>
+        <p class="text-center text-black">© 2025 Company, Inc</p>
+    </footer>
 
     <!-- Connecting Bootstrap -->
     <script src="script.js"></script>
