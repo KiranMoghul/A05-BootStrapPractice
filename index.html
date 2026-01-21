@@ -25,14 +25,22 @@
 </head>
 
 <body>
-    <nav class="navbar bg-dark">
-        <!-- Navigation 01 -->
-        <div class="container">
-            <div>
-                <i class="fa-solid fa-envelope" class="text-white bg-dark"></i>></i>
-                <a href="mailto:info@email.com">info@email.com</a>
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:0348-123 4567">0348-123 4567</a>
+
+    <!-- Navigation First Attempt
+    <nav class="bg-dark">
+        Navigation 01
+        <div class="navbar container">
+            <div class="d-flex gap-4 text-white align-items-center">
+                
+                <div class="d-flex gap-2 align-items-center">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:info@email.com" class="text-decoration-none text-white">info@email.com</a>
+                </div>
+                
+                <div class="d-flex gap-2 align-items-center">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:0348-123 4567" class="text-decoration-none text-white">0348-123 4567</a>
+                </div>
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-linkedin"></i>
             </div>
@@ -42,12 +50,86 @@
             </div>
         </div>
 
-        <!-- Navigation 02 -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        Navigation 02
+        <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-      <img src="/Assets/LogoFlower.svg" alt="Bootstrap" width="30" height="24">
-    </a>
+                    <img src="/Assets/LogoFlower.svg" alt="Bootstrap" width="30" height="24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </nav> -->
+
+    <!-- Navigation Cleaning Attempt-->
+    <nav class="bg-dark">
+        <!-- Navigation 01 -->
+        <div class="d-flex container-fluid justify-content-between px-4 py-2">
+
+            <div class="d-flex gap-4 align-items-center text-white text-decoration-none">
+
+                <!-- Email -->
+                <div class="d-flex gap-2 align-items-center">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:info@email.com" class="text-decoration-none text-white">info@email.com</a>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="d-flex gap-2 align-items-center">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:0348-123 4567" class="text-decoration-none text-white">0348-123 4567</a>
+                </div>
+
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="d-flex gap-2">
+                <button><a href="">Login</a></button>
+                <button><a href="">Register</a></button>
+            </div>
+        </div>
+
+        <!-- Navigation 02 -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/Assets/LogoFlower.svg" alt="Bootstrap" width="30" height="24">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -87,6 +169,7 @@
             </div>
         </nav>
     </nav>
+
 
 
 
